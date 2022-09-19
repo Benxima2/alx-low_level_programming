@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * reset_to_98 - updates the value of the variables
- * the pointer points to 98
- * @n: pointer to the variable to update
+ * reset_to_98 -> a function to  update the reference of a pointer
+ * @n: pointer to be updated
  */
 void rest_to_98(int *n)
 {
