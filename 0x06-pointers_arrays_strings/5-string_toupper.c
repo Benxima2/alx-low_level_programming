@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_toupper ->  onverting any string to upper case
+ * string_toupper ->  converting any string to upper case
  * @x: string param
  * Return: string
  */
