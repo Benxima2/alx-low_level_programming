@@ -4,6 +4,7 @@
  * _strchr -> string character
  * @s: string given
  * @c: another char
+ *
  * Return: a string
  */
 char *_strchr(char *s, char c)
@@ -15,7 +16,7 @@ char *_strchr(char *s, char c)
 		a++;
 	}
 
-	for (b = 0; b < a; b++)
+	for (b = 0; b <= a; b++)
 	{
 		if (c == s[b])
 			s += b;
