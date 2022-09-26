@@ -1,23 +1,21 @@
 #include "main.h"
 
 /**
- * _strchr -> string character
- * @s: string given
- * @c: another char
+ * _memset - Fill memory with a constant byte
+ * @s: memory area to fill
+ * @b: constant byte to fill
+ * @n: bytes of memory area to fill
  *
- * Return: a string
+ * Return: the memory area filled
  */
-char *_strchr(char *s, char c)
+char *_memset(char *s, char b, unsigned int n)
 {
-	int a = 0, b;
+	unsigned int a;
 
-	while (s[a])
-		a++;
-	for (b = 0; b <= a; b++)
+	for (a = 0; a < n; a++)
 	{
-		if (c == s[b])
-			s += b;
-		return (s);
+		s[a] = b;
 	}
-	return ('\0');
+
+	return (s);
 }
