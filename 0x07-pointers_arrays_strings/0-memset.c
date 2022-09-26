@@ -5,7 +5,7 @@
  * @s: string
  * @b: a character
  * @n: an integer
- * Rturn: a string
+ * Return: a string
  */
 char *_memset(char *s, char b, unsigned int n)
 {
