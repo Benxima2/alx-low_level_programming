@@ -23,7 +23,7 @@ int prime2(int a, int b)
  * Return: On success 1.
  * On error , -1 is returned, and errno is set appropriately.
  */
-int is prime_number(int n)
+int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
