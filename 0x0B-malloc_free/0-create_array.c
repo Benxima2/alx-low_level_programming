@@ -4,7 +4,7 @@
 
 
 /**
- * create_array - creat an array of size with char c
+ * create_array - creat an arry of size with char c
  * @size: unsigned int type
  * @c: char type
  * Return: Return pointer to array created
