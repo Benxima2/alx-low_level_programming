@@ -64,5 +64,4 @@ char *str_concat(char *s1, char s2)
 	_strncat(ptr, s1, size1);
 	_strncat(ptr, s2, size2);
 	ptr += '\0';
-	return (ptr);
 }
