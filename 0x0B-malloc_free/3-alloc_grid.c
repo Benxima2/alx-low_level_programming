@@ -6,7 +6,7 @@
  * **alloc_grid - function to allocate memory to grid
  * @width: int type
  * @height: int type
- * Return: grid of 0s
+ * Return: grid of 0
  */
 int **alloc_grid(int width, int height)
 {
