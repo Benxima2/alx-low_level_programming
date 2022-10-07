@@ -128,7 +128,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 
 		num = (*mult - '0') * digit;
 		num += tens;
-		*prod = (num % 10) + '0'
+		*prod = (num % 10) + '0';
 			tens = num / 10;
 	}
 
@@ -161,12 +161,12 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 
 		next_prod--;
 		next_len--;
-/	}
+	}
 
 	for (; next_len >= 0 && *next_prod != 'x'; next_len--)
 	{
 		num = (*next_prod - '0');
-		tens += tens;
+		num += tens;
 		*final_prod = (num % 10) + '0';
 		tens = num / 10;
 
@@ -208,7 +208,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	size = find_len(arg[1]) + find_len(arg[2]);
+	size = find_len(argv[1]) + find_len(argv[2]);
 	final_prod = creat_xarray(size + 1);
 	next_prod = create__xarray(size + 1);
 
