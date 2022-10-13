@@ -2,7 +2,7 @@
 
 /**
  * op_add - addition operation
- * @: first term
+ * @a: first term
  * @b: second term
  *
  * Return: result
