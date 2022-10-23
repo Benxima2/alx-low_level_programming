@@ -1,18 +1,13 @@
-/*
- * File: 100-first.c
- * Auth: Brennan D Baraban
- */
-
 #include <stdio.h>
 
-void __attribute__ ((constructor)) hare(void);
+void first(void) __attribute__((constructor));
 
 /**
- * hare - Print a string before the
- * main functionis executed.
+ * first - prints a sentence before the main
+ * function is executed
  */
-void hare(void);
+void first(void)
 {
-	printf("you're beat! and yet, you must allow,\n");
+	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
 }
