@@ -4,13 +4,15 @@
 /**
   * main - Entry point
     * Return: Always 0 (Success)
-      */
+    */
 int main(void)
 {
-char low;
+	int d;
 
-for (low = 'a'; low <= 'z'; low++)
-putchar(low);
-printf("\n");
-return (0);
+	for (d = '0'; d <= '9'; d++)
+		putchar(d);
+	putchar('\n');
+
+
+	return (0);
 }

@@ -1,23 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - writing all the letters of the alphabet except e and q
- *
- * return: always (sucess)
- *
- */
-
+   * main - Entry point
+    * Return: Always 0 (Success)
+     */
 int main(void)
 {
-	char i = 'a';
-	
-	while i <= 'z'
+	char low, e, q;
+
+	e = 'e';
+	q = 'q';
+
+	for (low = 'a'; low <= 'z'; low++)
 	{
-		if (i != 'e' && i != 'q')
-		{
-			putchar(i);
-		}
-		i++;
+		if (low != e && low != q)
+			putchar(low);
 	}
-	putchar('\n');
-	return (0);
+	printf("\n");
+
+return (0);
 }
+
+
